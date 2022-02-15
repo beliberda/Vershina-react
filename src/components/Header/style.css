@@ -1,58 +1,115 @@
 .header {
-    background-color: black;
-    background-image: url(../../assets/img/Header_image.jpg);
-    background-size: cover;
+  background-color: black;
+  background-image: url(../../assets/img/Header_image.jpg);
+  background-size: cover;
+  background-position: center;
 
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 120%;
-    /* or 29px */
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
 
-    letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 
-    color: #ffffff;
+  color: #ffffff;
+
+  height: 100vh;
 }
-
+.menu__imag {
+  display: none;
+}
 .header__wrapper {
-    padding: 64px;
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 100%;
 }
 
 .header__top {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu {
-    display: flex;
-    gap: 56px;
+  display: flex;
+  gap: 56px;
 }
 
 h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 62px;
-    line-height: 120%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 120%;
 
-    letter-spacing: -0.02em;
-
-    padding-top: 200px;
+  letter-spacing: -0.02em;
 }
 
 .header__description {
-    display: flex;
-    margin-left: auto;
-    padding-top: 16px;
-    padding-bottom: 64px;
+  display: flex;
+  margin-left: auto;
+  padding-top: 16px;
+  padding-bottom: 64px;
 
-    max-width: 749px;
+  max-width: 749px;
 }
 
 .button-up {
+  display: block;
+  background: transparent;
+
+  border: none;
+
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    font-size: 14px;
+  }
+
+  .header__logo {
+    width: 111px;
+    height: 33px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+.header__empty_block {
+  display: none;
+}
+@media (max-width: 320px) {
+  .header__wrapper {
+    padding: 16px;
+  }
+  .header__description {
+    display: none;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .header__main {
+    display: flex;
+    max-height: 251px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .header__empty_block {
     display: block;
-    background: transparent;
-    border: none;
-    margin: 0 auto;
-    padding-top: 200px;
+    height: 80%;
+  }
+  .menu {
+    display: none;
+  }
+  .menu__imag {
+    display: block;
+  }
 }

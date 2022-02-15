@@ -1,11 +1,23 @@
 .myBtn {
+  display: flex;
+  justify-content: center;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  align-items: center;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .myBtn {
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 120%;
 
-    padding: 20px 69px;
-    color: white;
-    background: transparent;
-    border: 1px solid white;
-    cursor: pointer;
+    padding: 12px 32px;
+  }
 }
