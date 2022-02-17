@@ -27,7 +27,7 @@ export default function Help() {
           <Up />
         </button> */}
       </div>
-      <div className="help__wrapper_320px container">
+      <div className="help__wrapper_768px container">
         <h2 className="h2">
           Название компании помощи краткое описание в одно предложение
         </h2>

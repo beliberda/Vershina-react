@@ -69,7 +69,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .projects {
     padding: 0 16px;
     margin-top: 115px;
@@ -82,10 +82,10 @@
     gap: 0;
   }
   .projects__item img {
-    max-width: 288px;
+    max-height: 512px;
+    max-width: 768px;
     width: 100%;
-    max-height: 288px;
-    height: 100%;
+height: auto;
     order: -1;
   }
   .projects__info {

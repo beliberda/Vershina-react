@@ -30,12 +30,13 @@
 
     letter-spacing: -0.02em;
 }
-@media (max-width:320px) {
+@media (max-width:768px) {
     .partners {
         padding: 128px 16px;
     }    
     .partners__list {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 16px;
     }
 }

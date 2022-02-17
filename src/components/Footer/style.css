@@ -135,7 +135,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .footer_top {
         font-size: 12px;
         grid-template-columns: 288px;
