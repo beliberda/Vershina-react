@@ -114,7 +114,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 540px) {
     .footer__contact {
         grid-area: contact;
         margin-top: 0px;

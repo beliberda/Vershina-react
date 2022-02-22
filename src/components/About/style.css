@@ -66,7 +66,7 @@
     margin-top: 26px;
 }
 
-.about__mission p {
+.mission__text {
     font-weight: normal;
     font-size: 24px;
     line-height: 120%;
@@ -79,6 +79,8 @@
 
 .about__footer {
     display: flex;
+    /* flex-wrap: wrap; */
+    
     gap: 32px;
     padding-top: 32px;
 }
@@ -87,13 +89,13 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-
+    max-width: 636px;
     padding: 32px;
 
-    width: 100%;
+    width: 49%;
 }
 
-.about__block p {
+.about__text {
     font-weight: normal;
     font-size: 24px;
     line-height: 120%;
@@ -121,6 +123,14 @@
 }
 
 @media (max-width: 1024px) {
+    .about__footer {
+       flex-direction: column;
+        align-items: center;
+    }
+    .about__block {
+        width: 100%;
+        max-width: none;
+    }
     .about__item-number {
         font-size: 32px;
     }
@@ -140,14 +150,27 @@
 
         left: 20px;
     }
-
-    .about__mission,
-    .about__footer {
-        display: none;
+    .h3 {
+        font-size: 32px;
     }
+    .about__text, .mission__text {
+        font-size: 18px;
+    }
+    li {
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width:768px) {
+    /* .about__mission,
+    .about__footer {
+        display: none;
+    } */
+    .about__mission {
+        margin-top: 84px;
+
+     }
     .about__h2{
         display: none;
     }
