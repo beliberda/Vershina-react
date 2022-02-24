@@ -40,7 +40,8 @@ export default function Header() {
             <input id="menu__toggle" type="checkbox" />
             <label className="menu_btn" for="menu__toggle">
               {/* <img className="menu__imag" src={menu_burger} alt="menu" /> */}
-              <div className="menu__burger"></div>
+              <span className="menu__burger"></span>
+              {/* <div className="menu__burger"></div> */}
             </label>
             <div className="menu__section">
               <div className="menu__main">
