@@ -62,11 +62,92 @@ h1 {
 .button-up {
   display: block;
   background: transparent;
-
   border: none;
-
   margin: 0 auto;
 }
+
+
+/* МЕНЮ МОБИЛКИ */
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked ~ .menu__section {
+  display: flex;
+}
+.menu__burger {
+  background: url("../../assets/img/menu.svg") no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+.menu__section {
+  position: fixed;
+  top: 0;
+  right: 16px;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.menu__close {
+  margin-bottom: 32px;
+  max-width: 16px;
+  max-height: 16px;
+  align-self: flex-end;
+}
+.menu__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 328px;
+}
+.menu__main__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu__main__title {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.menu__main__title p{
+  font-size: 16px;
+  font-weight: 500;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:8px;
+}
+.menu__item {
+  font-size: 14px;
+  text-decoration: underline;
+  border-bottom: 4px;
+}
+.menu__section {
+  height: 100vh;
+  background-color: #ffffff;
+  width: 205px;
+  margin-right: -16px;
+  padding: 21px 26px 0px 16px;
+  color: black;
+}
+
+.span {
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: black;
+  transition: 0.5s;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 
 @media (max-width: 1024px) {
   .header {
@@ -86,6 +167,9 @@ h1 {
   display: none;
 }
 @media (max-width: 768px) {
+  .menu__burger {
+    display: block;
+  }
   .header__wrapper {
     padding: 16px;
   }
