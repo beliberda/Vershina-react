@@ -74,8 +74,9 @@ h1 {
 #menu__toggle:checked ~ .menu__section {
   display: flex;
 }
-#menu__toggle:checked ~ .menu__btn >span {
+#menu__toggle:checked ~ .menu__burger {
   right: 100px;
+  background: url("../../assets/img/cross.svg") no-repeat;
 }
 .menu__burger {
   background: url("../../assets/img/menu.svg") no-repeat;
@@ -94,7 +95,14 @@ h1 {
   display: none;
   flex-direction: column;
   justify-content: flex-start;
+  height: 100vh;
+  background-color: #ffffff;
+  width: 205px;
+  margin-right: -16px;
+  padding: 21px 26px 0px 16px;
+  color: black;
 }
+
 .menu__close {
   margin-bottom: 32px;
   max-width: 16px;
@@ -132,14 +140,6 @@ h1 {
   font-size: 14px;
   text-decoration: underline;
   border-bottom: 4px;
-}
-.menu__section {
-  height: 100vh;
-  background-color: #ffffff;
-  width: 205px;
-  margin-right: -16px;
-  padding: 21px 26px 0px 16px;
-  color: black;
 }
 
 .span {
